@@ -1,0 +1,63 @@
+﻿public sealed class CsrExportBundle
+{
+    // existing fields …
+
+    public Distribution? Distribution { get; set; }
+    public DataQuality? DataQuality { get; set; }
+}
+
+public sealed class Distribution
+{
+    public List<Format> Formats { get; set; } = new();          // gmd:distributionFormat
+    public List<OnlineResource> OnlineResources { get; set; } = new(); // gmd:onLine
+    public string? UseLimitation { get; set; }                  // gmd:useLimitation
+    public string? AccessConstraints { get; set; }              // gmd:accessConstraints
+}
+
+public sealed class Format
+{
+    public string Name { get; set; } = string.Empty;            // gmd:MD_Format/gmd:name
+    public string? Version { get; set; }                        // gmd:MD_Format/gmd:version
+}
+
+public sealed class OnlineResource
+{
+    public string Url { get; set; } = string.Empty;             // gmd:CI_OnlineResource/gmd:linkage/gmd:URL
+    public string? Description { get; set; }                    // gmd:CI_OnlineResource/gmd:description
+    public string? Protocol { get; set; }                       // gmd:CI_OnlineResource/gmd:protocol
+}
+
+public sealed class DataQuality
+{
+    public string? Lineage { get; set; }                        // gmd:LI_Lineage/gmd:statement
+    public List<ProcessStep> ProcessSteps { get; set; } = new();// gmd:LI_Lineage/gmd:processStep
+}
+
+public sealed class ProcessStep
+{
+    public string? Description { get; set; }                    // gmd:LI_ProcessStep/gmd:description
+    public DateTime? Date { get; set; }                         // gmd:LI_ProcessStep/gmd:dateTime
+    public Organization? Processor { get; set; }                // gmd:LI_ProcessStep/gmd:processor
+    // Organization class already exists in the bundle
+}
+
+{
+  "Distribution": {
+    "Formats": [{ "Name": "NetCDF", "Version": "1.0" }],
+    "OnlineResources": [
+      { "Url": "https://example.org/data", "Description": "Download", "Protocol": "HTTP" }
+    ],
+    "UseLimitation": "For research use only",
+    "AccessConstraints": "None"
+  },
+  "DataQuality": {
+    "Lineage": "Raw CTD data processed with QC flags",
+    "ProcessSteps": [
+      {
+        "Description": "Initial QC",
+        "Date": "2024-03-10T15:30:00Z",
+        "Processor": { "Name": "Ocean Lab", "Country": "US" }
+      }
+    ]
+  }
+}
