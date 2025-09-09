@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+using System.Globalization;
+using System.Xml.Linq;
 using static Csr.XmlBuilder.Ns;
 
 namespace Csr.XmlBuilder;
@@ -17,25 +18,229 @@ public static class CsrXmlBuilder
             new XAttribute(XNamespace.Xmlns + "xlink", xlink),
             new XAttribute(XNamespace.Xmlns + "xsi", xsi),
             new XAttribute(XNamespace.Xmlns + "sdn", sdn),
-
-            // Pair: namespace → local schema path (relative to repo root)
             new XAttribute(xsi + "schemaLocation",
                 string.Join(' ',
                     "http://www.isotc211.org/2005/gmd", "schema/iso19139/gmd/gmd.xsd",
                     "http://www.isotc211.org/2005/gco", "schema/iso19139/gco/gco.xsd",
                     "http://www.isotc211.org/2005/gmi", "schema/iso19139/gmi/gmi.xsd",
                     "http://www.opengis.net/gml/3.2", "schema/iso19139/gml/gml.xsd",
-                    "https://www.seadatanet.org/urnschema", "schema/sdn-csr/SDN_CSR_ISO19139_5.2.0.xsd"
-                ))
+                    "https://www.seadatanet.org/urnschema", "schema/sdn-csr/SDN_CSR_ISO19139_5.2.0.xsd"))
         );
 
-        // TODO: Add sections in spec order:
-        // fileIdentifier, language, characterSet, hierarchyLevel, contact, dateStamp, metadataStandard*, identificationInfo, distributionInfo, dataQualityInfo, acquisitionInformation, etc.
-        // Use AddIfNotNull(root, BuildIdentification(bundle)); and so on.
+        XmlUtil.AddIfNotNull(root, BuildFileIdentifier(bundle));
+        foreach (var e in BuildLanguageAndCharset(bundle)) root.Add(e);
+        XmlUtil.AddIfNotNull(root, BuildHierarchyLevel(bundle));
+        XmlUtil.AddIfNotNull(root, BuildContact(bundle));
+        XmlUtil.AddIfNotNull(root, BuildDateStamp(bundle));
+        foreach (var e in BuildMetadataStandardInfo()) root.Add(e);
+        XmlUtil.AddIfNotNull(root, BuildIdentification(bundle));
+        XmlUtil.AddIfNotNull(root, BuildDistribution(bundle));
+        XmlUtil.AddIfNotNull(root, BuildDataQuality(bundle));
+        XmlUtil.AddIfNotNull(root, BuildAcquisitionInformation(bundle));
 
         return new XDocument(new XDeclaration("1.0", "UTF-8", "yes"), root);
     }
+
+    static XElement? BuildFileIdentifier(CsrExportBundle b)
+    {
+        if (string.IsNullOrWhiteSpace(b.CsrLocalId)) return null;
+        var id = $"urn:SDN:CSR:LOCAL:{b.CsrLocalId}";
+        return new XElement(gmd + "fileIdentifier",
+            new XElement(gco + "CharacterString", id));
+    }
+
+    static IEnumerable<XElement> BuildLanguageAndCharset(CsrExportBundle b)
+    {
+        yield return new XElement(gmd + "language",
+            new XElement(gmd + "LanguageCode",
+                new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#LanguageCode"),
+                new XAttribute("codeListValue", "eng"),
+                "eng"));
+        yield return new XElement(gmd + "characterSet",
+            new XElement(gmd + "MD_CharacterSetCode",
+                new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"),
+                new XAttribute("codeListValue", "utf8"),
+                "utf8"));
+    }
+
+    static XElement? BuildHierarchyLevel(CsrExportBundle b)
+    {
+        return new XElement(gmd + "hierarchyLevel",
+            new XElement(gmd + "MD_ScopeCode",
+                new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"),
+                new XAttribute("codeListValue", "dataset"),
+                "dataset"));
+    }
+
+    static XElement? BuildContact(CsrExportBundle b)
+    {
+        var org = b.ResponsibleLab;
+        if (org == null) return null;
+        var rp = new XElement(gmd + "CI_ResponsibleParty");
+        XmlUtil.AddIfNotNull(rp, new XElement(gmd + "organisationName",
+            new XElement(gco + "CharacterString", org.Name)));
+        XmlUtil.AddIfNotNull(rp, new XElement(gmd + "role",
+            new XElement(gmd + "CI_RoleCode",
+                new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"),
+                new XAttribute("codeListValue", "pointOfContact"),
+                "pointOfContact")));
+        return new XElement(gmd + "contact", rp);
+    }
+
+    static XElement? BuildDateStamp(CsrExportBundle b)
+    {
+        var date = b.RevisionDateUtc ?? DateTime.UtcNow;
+        return new XElement(gmd + "dateStamp",
+            new XElement(gco + "DateTime", date.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", CultureInfo.InvariantCulture)));
+    }
+
+    static IEnumerable<XElement> BuildMetadataStandardInfo()
+    {
+        yield return new XElement(gmd + "metadataStandardName",
+            new XElement(gco + "CharacterString", "SeaDataNet CSR"));
+        yield return new XElement(gmd + "metadataStandardVersion",
+            new XElement(gco + "CharacterString", "5.2.0"));
+    }
+
+    static XElement? BuildIdentification(CsrExportBundle b)
+    {
+        var citation = new XElement(gmd + "CI_Citation",
+            new XElement(gmd + "title", new XElement(gco + "CharacterString", b.CruiseName)));
+        if (b.BeginUtc.HasValue)
+        {
+            citation.Add(new XElement(gmd + "date",
+                new XElement(gmd + "CI_Date",
+                    new XElement(gmd + "date",
+                        new XElement(gco + "Date", b.BeginUtc.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture))),
+                    new XElement(gmd + "dateType",
+                        new XElement(gmd + "CI_DateTypeCode",
+                            new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"),
+                            new XAttribute("codeListValue", "creation"),
+                            "creation")))));
+        }
+
+        var id = new XElement(gmd + "MD_DataIdentification",
+            new XElement(gmd + "citation", citation));
+
+        if (!string.IsNullOrWhiteSpace(b.Abstract))
+            id.Add(new XElement(gmd + "abstract", new XElement(gco + "CharacterString", b.Abstract)));
+
+        if (b.SeaAreas.Count > 0)
+        {
+            foreach (var sa in b.SeaAreas)
+            {
+                var mdKeywords = new XElement(gmd + "MD_Keywords",
+                    new XElement(gmd + "keyword", new XElement(gco + "CharacterString", sa.Label ?? sa.Code)),
+                    new XElement(gmd + "type", new XElement(gmd + "MD_KeywordTypeCode",
+                        new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode"),
+                        new XAttribute("codeListValue", "place"),
+                        "place"))
+                );
+                id.Add(new XElement(gmd + "descriptiveKeywords", mdKeywords));
+            }
+        }
+
+        var extent = new XElement(gmd + "EX_Extent");
+        XmlUtil.AddIfNotNull(extent, BuildTemporalExtent(b));
+        XmlUtil.AddIfNotNull(extent, BuildSpatialExtent(b));
+        if (extent.HasElements)
+            id.Add(new XElement(gmd + "extent", extent));
+
+        return new XElement(gmd + "identificationInfo", id);
+    }
+
+    static XElement? BuildTemporalExtent(CsrExportBundle b)
+    {
+        if (!b.BeginUtc.HasValue && !b.EndUtc.HasValue) return null;
+        var tp = new XElement(gml + "TimePeriod",
+            new XElement(gml + "beginPosition", b.BeginUtc?.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", CultureInfo.InvariantCulture)),
+            new XElement(gml + "endPosition", b.EndUtc?.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", CultureInfo.InvariantCulture))
+        );
+        return new XElement(gmd + "temporalElement",
+            new XElement(gmd + "EX_TemporalExtent",
+                new XElement(gmd + "extent", tp)));
+    }
+
+    static XElement? BuildSpatialExtent(CsrExportBundle b)
+    {
+        if (!b.West.HasValue || !b.East.HasValue || !b.South.HasValue || !b.North.HasValue) return null;
+        var bbox = new XElement(gmd + "EX_GeographicBoundingBox",
+            new XElement(gmd + "westBoundLongitude", new XElement(gco + "Decimal", b.West.Value.ToString(CultureInfo.InvariantCulture))),
+            new XElement(gmd + "eastBoundLongitude", new XElement(gco + "Decimal", b.East.Value.ToString(CultureInfo.InvariantCulture))),
+            new XElement(gmd + "southBoundLatitude", new XElement(gco + "Decimal", b.South.Value.ToString(CultureInfo.InvariantCulture))),
+            new XElement(gmd + "northBoundLatitude", new XElement(gco + "Decimal", b.North.Value.ToString(CultureInfo.InvariantCulture))));
+        return new XElement(gmd + "geographicElement", bbox);
+    }
+
+    static XElement? BuildDistribution(CsrExportBundle b) => null;
+
+    static XElement? BuildDataQuality(CsrExportBundle b) => null;
+
+    static XElement? BuildAcquisitionInformation(CsrExportBundle b)
+    {
+        if (b.Moorings == null || b.Moorings.Count == 0) return null;
+        var mi = new XElement(gmi + "MI_AcquisitionInformation");
+        foreach (var m in b.Moorings)
+        {
+            var op = new XElement(gmi + "MI_Operation");
+            if (!string.IsNullOrWhiteSpace(m.Description))
+                op.Add(new XElement(gmd + "description", new XElement(gco + "CharacterString", m.Description)));
+            if (m.EventTimeUtc.HasValue)
+                op.Add(new XElement(gmd + "citation",
+                    new XElement(gmd + "CI_Citation",
+                        new XElement(gmd + "date",
+                            new XElement(gmd + "CI_Date",
+                                new XElement(gmd + "date", new XElement(gco + "DateTime", m.EventTimeUtc.Value.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", CultureInfo.InvariantCulture))),
+                                new XElement(gmd + "dateType", new XElement(gmd + "CI_DateTypeCode",
+                                    new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"),
+                                    new XAttribute("codeListValue", "creation"),
+                                    "creation")))))));
+            mi.Add(new XElement(gmi + "operation", op));
+        }
+        return mi.HasElements ? mi : null;
+    }
 }
 
-// Stub; wire your real model later
-public sealed class CsrExportBundle { }
+public sealed class CsrExportBundle
+{
+    public string? CsrLocalId { get; set; }
+    public string CruiseName { get; set; } = string.Empty;
+    public string? Abstract { get; set; }
+    public DateTime? RevisionDateUtc { get; set; }
+    public DateTime? BeginUtc { get; set; }
+    public DateTime? EndUtc { get; set; }
+    public double? West { get; set; }
+    public double? East { get; set; }
+    public double? South { get; set; }
+    public double? North { get; set; }
+    public Organization? ResponsibleLab { get; set; }
+    public List<Keyword> SeaAreas { get; set; } = new();
+    public List<Mooring> Moorings { get; set; } = new();
+}
+
+public sealed class Organization
+{
+    public string Name { get; set; } = string.Empty;
+    public string? Url { get; set; }
+    public string? Country { get; set; }
+}
+
+public sealed class Keyword
+{
+    public string? Code { get; set; }
+    public string? Label { get; set; }
+}
+
+public sealed class Mooring
+{
+    public string? DataCategoryCode { get; set; }
+    public string? DataCategoryLabel { get; set; }
+    public string? Description { get; set; }
+    public double? Latitude { get; set; }
+    public double? Longitude { get; set; }
+    public DateTime? EventTimeUtc { get; set; }
+    public string? PrincipalInvestigator { get; set; }
+    public string? OrganizationName { get; set; }
+    public string? Email { get; set; }
+    public string? PlatformDescription { get; set; }
+}
