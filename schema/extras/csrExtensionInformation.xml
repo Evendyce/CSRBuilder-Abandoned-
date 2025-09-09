@@ -1,0 +1,3714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_MetadataExtensionInformation xmlns:gmd="http://www.isotc211.org/2005/gmd"
+   xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:srv="http://www.isotc211.org/2005/srv"
+   xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts"
+   xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sdn="http://www.seadatanet.org" xmlns:gml="http://www.opengis.net/gml"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.seadatanet.org https://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN_CSR_ISO19139_5.2.0.xsd">
+
+   <gmd:extensionOnLineResource>
+      <gmd:CI_OnlineResource>
+         <gmd:linkage>
+            <gmd:URL>https://www.seadatanet.org/Standards/Metadata-formats</gmd:URL>
+         </gmd:linkage>
+         <gmd:name>
+            <gco:CharacterString>SeaDataNet ISO 19139 Profile for CDI Metadata</gco:CharacterString>
+         </gmd:name>
+      </gmd:CI_OnlineResource>
+   </gmd:extensionOnLineResource>
+
+   <!-- new metadata elements -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_DataIdentification</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>SDNDataIdent</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>information required to identify a resource within
+               SeaDataNet</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new specified class</gco:CharacterString>
+         </gmd:rule>
+         <gmd:rationale>
+            <gco:CharacterString>To provide additionalDocumentation
+               information</gco:CharacterString>
+         </gmd:rationale>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>additionalDocumentation</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>idAdditionalDocumentation</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>other documentation associated with the resource (e.g. related
+               articles, publications)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>SDN_DataIdentification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new class</gco:CharacterString>
+         </gmd:rule>
+         <gmd:rationale>
+            <gco:CharacterString>To provide bibliographic references related to the
+               resource</gco:CharacterString>
+         </gmd:rationale>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_Citation</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>SDNCitation</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>standardized resource reference within
+               SeaDataNet</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>additionalDocumentation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new specified class</gco:CharacterString>
+         </gmd:rule>
+         <gmd:rationale>
+            <gco:CharacterString>To provide citation completed with online
+               references</gco:CharacterString>
+         </gmd:rationale>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>onlineReference</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>onlineReference</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>online reference to the cited documentation</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>SDN_Citation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>New Metadata class</gco:CharacterString>
+         </gmd:rule>
+         <gmd:rationale>
+            <gco:CharacterString>To provide pointers to online references</gco:CharacterString>
+         </gmd:rationale>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+   <!-- new metadata codelists -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_FormatNameCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>FormatName</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Formats used for data delivery by SeaDataNet</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>name</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_HierarchyLevelNameCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>HierarchyLevelName</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Types of metadata record in the SeaDataNet
+               metadata</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>hierarchyLevelName</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_DeviceCategoryCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>DeviceCategory</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>SeaDataNet device categories</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_PlatformCategoryCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>PlatformCategory</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>SeaVoX Platform Categories</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_ParameterDiscoveryCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>ParameterDiscovery</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>SeaDataNet Parameter Discovery Vocabulary</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_CRSCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>CRS</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Co-ordinate reference systems used for positions
+               (latitude/longitude or grid references) in SeaDataNet metadata.</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>code</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_CountryCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>Country</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>International Standards Organisation
+               countries</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>country</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_EDMERPCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>EDMERP</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>European Directory of Marine Environmental Research
+               Projects</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_EDMOCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>EDMO</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>European Directory of Marine Organisations</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>organisationName</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_EDMEDCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>EDMED</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>European Directory of Marine Environmental Data</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>code</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_PortCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>Port</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Ports Gazetteer</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#SDN_PortCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_CountryCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>Country</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>ISO country codes from ISO3166-1 list</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#SDN_CountryCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+      <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_PlatformCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>Platform</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Platform Categories</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#SDN_PlatformCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+      <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_WaterBodyCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>WaterBody</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Watery Body Gazetteer</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#SDN_WaterBodyCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+      <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>SDN_MarsdenCode</gco:CharacterString>
+         </gmd:name>
+         <gmd:shortName>
+            <gco:CharacterString>Marsden</gco:CharacterString>
+         </gmd:shortName>
+         <gmd:definition>
+            <gco:CharacterString>Ten-degree Marsden Squares</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#SDN_MarsdenCode"
+               codeListValue="codelist">codelist</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:parentEntity>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>definition of a new metadata codelist</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- changed domain/obbligation/occurrences -->
+   <!-- MD_Metadata -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>root entity which defines metadata about a resource or
+               resources</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 2, 3, 4, 6-15, 17, 18</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>fileIdentifier</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>unique identifier for this metadata file</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>urn as defined in RFC 1737 and starting with the string
+               “urn:SDN:CDI:“</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>language</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>language used for documenting metadata</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>LanguageCode &lt;&lt;CodeList&gt;&gt; restricted to value
+               “eng”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>characterSet</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name/identifier of the character coding standard used for the
+               metadata set</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_CharacterSetCode &lt;&lt;CodeList&gt;&gt; restricted to value
+               “utf8”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>hierarchyLevel</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>scope to which the metadata applies (see Annex H for more
+               information about metadata hierarchy levels)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_ScopeCode &lt;&lt;CodeList&gt;&gt; restricted to value
+               “dataset”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>hierarchyLevelName</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of the hierarchy levels for which the metadata is
+               provided</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>HierarchyLevelNameCode &lt;&lt;CodeList&gt;&gt; restricted to value
+               “Common Data Index record”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>contact</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>party responsible for the metadata
+               information</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>CI_ResponsibleParty</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>metadataStandardName</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of the metadata standard (including profile name)
+               used</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Fixed value of “ISO 19115/ SeaDataNet
+               profile”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>metadataStandardVersion</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>version of the metadata standard (version of the profile)
+               used</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>referenceSystemInfo</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>description of the spatial and temporal reference systems used in
+               the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>optional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_ReferenceSystem</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>metadataExtensionInfo</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information describing metadata extensions</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_MetadataExtensionInformation</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>identificationInfo</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString/>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>distributionInfo</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about the distributor of and options for obtaining the
+               resource(s)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_Distribution</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>dataQualityInfo</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>overall assessment of quality of a
+               resource(s)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>DQ_DataQuality</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Metadata</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Identification -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>basic information required to uniquely identify a resource or
+               resources</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 24, 25, 29, 33, 35, 35.1</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>descriptiveKeywords</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>category keywords, their type, and reference source
+            </gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_GenericKeywords</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>resourceConstraints</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about constraints which apply to the
+               resource(s)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_Constraints</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_DataIdentification -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_DataIdentification</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information required to identify a resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 38-41, 45 and 24, 25, 29, 33, 35, 35.1</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>language</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>language(s) used within the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_LanguageCode &lt;&lt;CodeList&gt;&gt; restricted to value:
+               “eng”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_DataIdentification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   
+      <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>geometricObjectType</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the dataset</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_GeometricObjectTypeCode &lt;&lt;CodeList&gt;&gt; restricted to values:
+               “curve”, “point” or “surface”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_GeometricObjects</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+   
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>characterSet</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>full name of the character coding standard used for the
+               dataset</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_CharacterSetCode &lt;&lt;CodeList&gt;&gt; restricted to value:
+               “utf8”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString/>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>topicCategory</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>main theme(s) of the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_TopicCategoryCode &lt;&lt;CodeList&gt;&gt; restricted to value:
+               “oceans”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_DataIdentification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>extent</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>spatial and temporal extent of the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_DataIdentification</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Keywords -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>keyword</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>commonly used word(s) or formalised word(s) or phrase(s) used to
+               describe the subject</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text or SDN_DeviceCategoryCode &lt;&lt;CodeList&gt;&gt; or
+               SDN_PlatformCategoryCode &lt;&lt;CodeList&gt;&gt; or SDN_ParameterDiscoveryCode
+               &lt;&lt;CodeList&gt;&gt; or SDN_EDMERPCode
+               &lt;&lt;CodeList&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Keywords</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Resolution -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Resolution</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>level of detail expressed as a scale factor or a
+               distance</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="unionClass">unionClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 61</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Resolution</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>distance</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>ground sample distance</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Distance (B.4.3), including the distance value and the distance
+               unit of measure attribute (‘uom’). The latter has a restricted domain: only the codes
+               from the vocabulary https://www.seadatanet.org/urnurl/SDN:P06 are allowed ‘uom’s
+               values (e.g. https://www.seadatanet.org/urnurl/SDN:P06::ULAA)</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Resolution</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_AggregateInformation -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>aggregateDataSetName</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>citation information about the associated resource
+            </gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>conditional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>CI_Citation (B.3.2) with the following mandatory elements: title,
+               alternateTitle, date</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_AggregateInformation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>initiativeType</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>type of initiative under which the associated resource was
+               produced. Note: the activity that resulted in the associated
+               resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>DS_InitiativeTypeCode (B.5.8)
+               &lt;&lt;CodeList&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_AggregateInformation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Constraints -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_LegalConstraints</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>restrictions and legal prerequisites for accessing and using the
+               resource or metadata</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 70,72 and 68</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Constraints</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+
+   <!-- DQ_DataQuality -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>report</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>Quantitative quality information for the data specified by the
+               scope</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="asspciation">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>DQ_Element &lt;&lt;Abstract&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>DQ_DataQuality</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>lineage</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>Non-quantitative quality information about the lineage of the data
+               specified by the scope</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>LI_Lineage</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>DQ_DataQuality</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- LI_Lineage -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>LI_Lineage</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about the events or source data used in constructing
+               the data specified by the scope or lack of knowledge about
+               lineage</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 83</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>LI_Lineage</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>statement</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>general explanation of the data producer’s knowledge about the
+               lineage of a resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>LI_Lineage</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- DQ_Element -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>DQ_Element</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>Aspect of quantitative quality information</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 107</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>DQ_Element</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- DQ_Scope -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>DQ_Scope</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>Extent of characteristric(s) of the data for which quality
+               information is reported</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 139</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>DQ_Scope</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_VectorSpatialRepresentation -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_VectorSpatialRepresentation</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about the vector spatial objects in the
+               resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 178</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_VectorSPatialRepresentation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>geometricObjects</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about the geometric objects used in the
+               resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>MD_GeometricObjects &lt;&lt;DataType&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_VectorSPatialRepresentation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Dimension -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>resolution</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>degree of detail in the grid dataset</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Measure; both value and unit of measure a mandatory; for the unit
+               of the resolution/frequency (‘uom’) attribute only values from vocabulary
+               https://www.seadatanet.org/urnurl/SDN:P06 are allowed</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString/>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation and a more restrictive
+               domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_GeometricObjects -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_GeometricObjects</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>number of objects, listed by geometric object type, used in the
+               dataset</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 184</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_GeometricObjects</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_CRS -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_CRS</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>Metadata about a coordinate system in which attributes have been
+               derived from SC_CRS as defined in ISO 19111 – Spatial referencing by
+               coordinates</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 187</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_CRS</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Identifier -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Identifier</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>value uniquely identifying an object within a
+               namespace</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 206-207 with code data type = CharacterString, code domain =
+               Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identifier</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>code</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>alphanumeric value identifying an instance in the
+               namespace</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="unionClass">unionClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text or SDN_EDMEDCode &lt;&lt;CodeList&gt;&gt; or SDN_CRSCode &lt;&lt;CodeList&gt;&gt; values from L10
+               vocabulary</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Identifier</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- RS_Identifier -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>RS_Identifier</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>identifier used for reference systems</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 206-207 and 208.1 with code data type = Class, code domain =
+               SDN_CRSCode &lt;&lt;CodeList&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>RS_Identifier</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_DigitalTransferOptions -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_DigitalTransferOptions</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>technical means and media by which a resource is obtained from the
+               distributor</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 276-277</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_DigitalTransferOptions</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>onLine</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about online sources from which the resource can be
+               obtained</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>CI_OnlineResource</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_DigitalTransferOptions</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Distributor -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Distributor</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about the distributor</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 280</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Distributor</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- MD_Format -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>MD_Format</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>description of the computer language construct that specifies the
+               representation of data objects in a record, file, message, storage device or
+               transmission channel</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 285-286</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Format</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>name</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of the resource format(s)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>SDN_FormatNameCode &lt;&lt;CodeList&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>MD_Format</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- EX_Extent -->
+   <!--gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>extent of the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 336-338</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>geographicElement</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>provides spatial component of the extent of the referring
+               object</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>EX_GeographicExtent</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>temporalElement</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>provides temporal component of the extent of the referring
+               object</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>EX_TemporalExtent</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation-->
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>verticalElement</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>provides vertical component of the extent of the referring
+               object</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>optional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>EX_GeographicExtent</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_Extent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- EX_GeographicExtent -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>EX_GeographicExtent</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>geographic area of the dataset</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="aggregatedClass">aggregatedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString/>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_GeographicExtent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>EX_BoundingPolygon</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>enclosing geometric object which locates the resource, expressed as
+               a set of (x,y) coordinate (s) NOTE: If a polygon is used it should be closed (last
+               point replicates first point)</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 342</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_BoundingPolygon</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>EX_GeographicBoundingBox</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>geographic position of the resource. NOTE This is only an
+               approximate reference so specifying the coordinate reference system is unnecessary
+               and need only be provided with a precision of up to two decimal
+               places</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 344-347</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_GeographicBoundingBox</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>EX_GeographicDescription</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>description of the geographic area using
+               identifiers</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Line 349</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_GeographicDescription</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- EX_TemporalExtent -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>extent</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>date and time for the content of the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>TM_Period</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_TemporalExtent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- EX_VerticaltExtent -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>unitOfMeasure</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>vertical units used for vertical extent information Examples:
+               metres, feet, millimetres, hectopascals</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>fixed value of "metres"</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>EX_VerticalExtent</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>verticalDatum</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>provides information about the origin from which the maximum and
+               minimum elevation values are measured</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="association">association</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>SC_Vertical Datum (B.4.9) with identifier allowed values from
+               vocabulary at https://www.seadatanet.org/urnurl/SDN:L11</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString/>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- CI_Citation -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>CI_Citation</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>standardized resource reference</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 360-365, 367, 369-370, 372-373</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_Citation</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- CI_ResponsibleParty -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>CI_ResponsibleParty</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>identification of, and means of communication with, person(s) and
+               organisations associated with the resource</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="specifiedClass">specifiedClass</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 375, 376, 378, 379</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_ResponsibleParty</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>individualName</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of the responsible person-surname, given name, title separated
+               by a delimiter</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>conditional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:condition>
+            <gco:CharacterString>organisationName not documented?</gco:CharacterString>
+         </gmd:condition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_ResponsibleParty</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>organisationName</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>name of the responsible person-surname, given name, title separated
+               by a delimiter</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>conditional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:condition>
+            <gco:CharacterString>individualName not documented?</gco:CharacterString>
+         </gmd:condition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="characterString">characterString</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_ResponsibleParty</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- CI_Address -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>country</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>country of the physical address</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>optional</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>SDN_CountryCode &lt;&lt;CodeList&gt;&gt;</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_Address</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>electronicMailAddress</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>address of the electronic mailbox of the responsible organisation
+               or individual</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>Free text</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_Address</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- CI_Contact -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>CI_Contact</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information required to enable contact with the responsible person
+               and/or organisation</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 388-390</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_Contact</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>address</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>physical and email address at which the organisation or individual
+               may be contacted</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>N</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>CI_Address</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_Contact</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more stringent obligation</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!-- CI_OnLineResource -->
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>CI_OnlineResource</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>information about on-line sources from which the resource,
+               specification, or community profile name and extended metadata elements can be
+               obtained</gco:CharacterString>
+         </gmd:definition>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:domainValue>
+            <gco:CharacterString>Lines 397-398,400-402</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_OnlineResource</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <gmd:extendedElementInformation>
+      <gmd:MD_ExtendedElementInformation>
+         <gmd:name>
+            <gco:CharacterString>linkage</gco:CharacterString>
+         </gmd:name>
+         <gmd:definition>
+            <gco:CharacterString>location (address) for on-line access using a Uniform Resource
+               Locator/Uniform Resource Identifier address or similar addressing scheme such as
+               http://www.statkart.no/isotc211</gco:CharacterString>
+         </gmd:definition>
+         <gmd:obligation>
+            <gmd:MD_ObligationCode>mandatory</gmd:MD_ObligationCode>
+         </gmd:obligation>
+         <gmd:dataType>
+            <gmd:MD_DatatypeCode
+               codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode"
+               codeListValue="class">class</gmd:MD_DatatypeCode>
+         </gmd:dataType>
+         <gmd:maximumOccurrence>
+            <gco:CharacterString>1</gco:CharacterString>
+         </gmd:maximumOccurrence>
+         <gmd:domainValue>
+            <gco:CharacterString>URL (IETF RFC1738 IETF RFC 2056) with restriction: linkage should
+               start with “http://”, “https://” or “ftp://”</gco:CharacterString>
+         </gmd:domainValue>
+         <gmd:parentEntity>
+            <gco:CharacterString>CI_OnlineResource</gco:CharacterString>
+         </gmd:parentEntity>
+         <gmd:rule>
+            <gco:CharacterString>Definition of a more restrictive domain</gco:CharacterString>
+         </gmd:rule>
+         <gmd:source>
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>SeaDataNet</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:role>
+                  <gmd:CI_RoleCode
+                     codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode"
+                     codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:source>
+      </gmd:MD_ExtendedElementInformation>
+   </gmd:extendedElementInformation>
+
+   <!--gmd:extendedElementInformation>
+            <gmd:MD_ExtendedElementInformation>
+               <gmd:name><gco:CharacterString></gco:CharacterString></gmd:name>
+               <gmd:definition><gco:CharacterString></gco:CharacterString></gmd:definition>
+               <gmd:obligation><gmd:MD_ObligationCode></gmd:MD_ObligationCode></gmd:obligation>               
+               <gmd:dataType><gmd:MD_DatatypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_DatatypeCode" codeListValue="class">class</gmd:MD_DatatypeCode></gmd:dataType>
+               <gmd:maximumOccurrence><gco:CharacterString></gco:CharacterString></gmd:maximumOccurrence>
+               <gmd:domainValue><gco:CharacterString></gco:CharacterString></gmd:domainValue>               
+               <gmd:parentEntity><gco:CharacterString></gco:CharacterString></gmd:parentEntity>
+               <gmd:rule><gco:CharacterString>Definition of a more stringent obligation and a more restrictive domain</gco:CharacterString></gmd:rule>
+               <gmd:source><gmd:CI_ResponsibleParty>
+                  <gmd:organisationName><gco:CharacterString>SeaDataNet</gco:CharacterString></gmd:organisationName>
+                  <gmd:role>
+                     <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="author" codeSpace="ISOTC211/19115">author</gmd:CI_RoleCode>
+                  </gmd:role>
+               </gmd:CI_ResponsibleParty></gmd:source>
+            </gmd:MD_ExtendedElementInformation>
+         </gmd:extendedElementInformation-->
+
+
+</gmd:MD_MetadataExtensionInformation>
