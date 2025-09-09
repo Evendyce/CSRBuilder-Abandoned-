@@ -87,7 +87,7 @@ public static class JsonLoader
     }
 
     static List<Mooring> ParseMoorings(JsonElement root)
-    {
+{
         var list = new List<Mooring>();
         if (root.TryGetProperty("Moorings", out var mo) &&
             mo.TryGetProperty("Rows", out var rows) && rows.ValueKind == JsonValueKind.Array)

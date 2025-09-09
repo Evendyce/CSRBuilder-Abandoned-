@@ -142,7 +142,7 @@ public static class CsrXmlBuilder
 
         foreach (var rc in BuildResourceConstraints(b))
             id.Add(rc);
-
+      
         var extent = new XElement(gmd + "EX_Extent");
         XmlUtil.AddIfNotNull(extent, BuildTemporalExtent(b));
         XmlUtil.AddIfNotNull(extent, BuildSpatialExtent(b));
@@ -289,6 +289,7 @@ public static class CsrXmlBuilder
                                     "creation")))))));
             mi.Add(new XElement(gmi + "operation", op));
         }
+      
         return mi.HasElements ? new XElement(gmi + "acquisitionInformation", mi) : null;
     }
 }
@@ -324,7 +325,6 @@ public sealed class Keyword
     public string? Code { get; set; }
     public string? Label { get; set; }
 }
-
 public sealed class Mooring
 {
     public string? DataCategoryCode { get; set; }
@@ -338,7 +338,6 @@ public sealed class Mooring
     public string? Email { get; set; }
     public string? PlatformDescription { get; set; }
 }
-
 public sealed class Distribution
 {
     public List<Format> Formats { get; set; } = new();
