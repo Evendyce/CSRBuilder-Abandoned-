@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/src/Csr.XmlBuilder/.vs/Csr.XmlBuilder
+/src/Csr.XmlBuilder/obj
