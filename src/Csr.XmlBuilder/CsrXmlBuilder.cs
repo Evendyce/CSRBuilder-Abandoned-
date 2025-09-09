@@ -140,6 +140,9 @@ public static class CsrXmlBuilder
             }
         }
 
+        foreach (var rc in BuildResourceConstraints(b))
+            id.Add(rc);
+      
         var extent = new XElement(gmd + "EX_Extent");
         XmlUtil.AddIfNotNull(extent, BuildTemporalExtent(b));
         XmlUtil.AddIfNotNull(extent, BuildSpatialExtent(b));
@@ -172,9 +175,98 @@ public static class CsrXmlBuilder
         return new XElement(gmd + "geographicElement", bbox);
     }
 
-    static XElement? BuildDistribution(CsrExportBundle b) => null;
+    static IEnumerable<XElement> BuildResourceConstraints(CsrExportBundle b)
+    {
+        if (b.Distribution == null) yield break;
+        var dist = b.Distribution;
+        var legal = new XElement(gmd + "MD_LegalConstraints");
+        if (!string.IsNullOrWhiteSpace(dist.UseLimitation))
+            legal.Add(new XElement(gmd + "useLimitation", new XElement(gco + "CharacterString", dist.UseLimitation)));
+        if (!string.IsNullOrWhiteSpace(dist.AccessConstraints))
+            legal.Add(new XElement(gmd + "accessConstraints",
+                new XElement(gmd + "MD_RestrictionCode",
+                    new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"),
+                    new XAttribute("codeListValue", dist.AccessConstraints),
+                    dist.AccessConstraints)));
+        if (legal.HasElements)
+            yield return new XElement(gmd + "resourceConstraints", legal);
+    }
 
-    static XElement? BuildDataQuality(CsrExportBundle b) => null;
+    static XElement? BuildDistribution(CsrExportBundle b)
+    {
+        var d = b.Distribution;
+        if (d == null) return null;
+        var dist = new XElement(gmd + "MD_Distribution");
+        foreach (var f in d.Formats)
+        {
+            var fmt = new XElement(gmd + "MD_Format",
+                new XElement(gmd + "name", new XElement(gco + "CharacterString", f.Name)));
+            if (!string.IsNullOrWhiteSpace(f.Version))
+                fmt.Add(new XElement(gmd + "version", new XElement(gco + "CharacterString", f.Version)));
+            dist.Add(new XElement(gmd + "distributionFormat", fmt));
+        }
+        if (d.OnlineResources.Count > 0)
+        {
+            var dto = new XElement(gmd + "MD_DigitalTransferOptions");
+            foreach (var r in d.OnlineResources)
+            {
+                var or = new XElement(gmd + "CI_OnlineResource",
+                    new XElement(gmd + "linkage", new XElement(gmd + "URL", r.Url)));
+                if (!string.IsNullOrWhiteSpace(r.Description))
+                    or.Add(new XElement(gmd + "description", new XElement(gco + "CharacterString", r.Description)));
+                if (!string.IsNullOrWhiteSpace(r.Protocol))
+                    or.Add(new XElement(gmd + "protocol", new XElement(gco + "CharacterString", r.Protocol)));
+                dto.Add(new XElement(gmd + "onLine", or));
+            }
+            dist.Add(new XElement(gmd + "transferOptions", dto));
+        }
+        return dist.HasElements ? new XElement(gmd + "distributionInfo", dist) : null;
+    }
+
+    static XElement? BuildDataQuality(CsrExportBundle b)
+    {
+        var dq = b.DataQuality;
+        if (dq == null) return null;
+        var dqEl = new XElement(gmd + "DQ_DataQuality",
+            new XElement(gmd + "scope",
+                new XElement(gmd + "DQ_Scope",
+                    new XElement(gmd + "level",
+                        new XElement(gmd + "MD_ScopeCode",
+                            new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"),
+                            new XAttribute("codeListValue", "dataset"),
+                            "dataset")))),
+            new XElement(gmd + "report",
+                new XElement(gmd + "DQ_DomainConsistency",
+                    new XElement(gmd + "result",
+                        new XElement(gmd + "DQ_ConformanceResult",
+                            new XElement(gmd + "pass", new XElement(gco + "Boolean", "true")))))));
+
+        var lineage = new XElement(gmd + "LI_Lineage");
+        if (!string.IsNullOrWhiteSpace(dq.Lineage))
+            lineage.Add(new XElement(gmd + "statement", new XElement(gco + "CharacterString", dq.Lineage)));
+        foreach (var ps in dq.ProcessSteps)
+        {
+            var step = new XElement(gmd + "LI_ProcessStep");
+            if (!string.IsNullOrWhiteSpace(ps.Description))
+                step.Add(new XElement(gmd + "description", new XElement(gco + "CharacterString", ps.Description)));
+            if (ps.Date.HasValue)
+                step.Add(new XElement(gmd + "dateTime", new XElement(gco + "DateTime", ps.Date.Value.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", CultureInfo.InvariantCulture))));
+            if (ps.Processor != null)
+            {
+                var proc = new XElement(gmd + "CI_ResponsibleParty",
+                    new XElement(gmd + "organisationName", new XElement(gco + "CharacterString", ps.Processor.Name)),
+                    new XElement(gmd + "role",
+                        new XElement(gmd + "CI_RoleCode",
+                            new XAttribute("codeList", "http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"),
+                            new XAttribute("codeListValue", "processor"),
+                            "processor")));
+                step.Add(new XElement(gmd + "processor", proc));
+            }
+            lineage.Add(new XElement(gmd + "processStep", step));
+        }
+        dqEl.Add(new XElement(gmd + "lineage", lineage));
+        return new XElement(gmd + "dataQualityInfo", dqEl);
+    }
 
     static XElement? BuildAcquisitionInformation(CsrExportBundle b)
     {
@@ -197,7 +289,8 @@ public static class CsrXmlBuilder
                                     "creation")))))));
             mi.Add(new XElement(gmi + "operation", op));
         }
-        return mi.HasElements ? mi : null;
+      
+        return mi.HasElements ? new XElement(gmi + "acquisitionInformation", mi) : null;
     }
 }
 
@@ -216,6 +309,8 @@ public sealed class CsrExportBundle
     public Organization? ResponsibleLab { get; set; }
     public List<Keyword> SeaAreas { get; set; } = new();
     public List<Mooring> Moorings { get; set; } = new();
+    public Distribution? Distribution { get; set; }
+    public DataQuality? DataQuality { get; set; }
 }
 
 public sealed class Organization
@@ -230,7 +325,6 @@ public sealed class Keyword
     public string? Code { get; set; }
     public string? Label { get; set; }
 }
-
 public sealed class Mooring
 {
     public string? DataCategoryCode { get; set; }
@@ -243,4 +337,37 @@ public sealed class Mooring
     public string? OrganizationName { get; set; }
     public string? Email { get; set; }
     public string? PlatformDescription { get; set; }
+}
+public sealed class Distribution
+{
+    public List<Format> Formats { get; set; } = new();
+    public List<OnlineResource> OnlineResources { get; set; } = new();
+    public string? UseLimitation { get; set; }
+    public string? AccessConstraints { get; set; }
+}
+
+public sealed class Format
+{
+    public string Name { get; set; } = string.Empty;
+    public string? Version { get; set; }
+}
+
+public sealed class OnlineResource
+{
+    public string Url { get; set; } = string.Empty;
+    public string? Description { get; set; }
+    public string? Protocol { get; set; }
+}
+
+public sealed class DataQuality
+{
+    public string? Lineage { get; set; }
+    public List<ProcessStep> ProcessSteps { get; set; } = new();
+}
+
+public sealed class ProcessStep
+{
+    public string? Description { get; set; }
+    public DateTime? Date { get; set; }
+    public Organization? Processor { get; set; }
 }

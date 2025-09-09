@@ -30,7 +30,9 @@ public static class JsonLoader
             North = TryGetDouble(root.GetProperty("Spatial"), "North"),
             ResponsibleLab = ParseOrganisation(root.GetProperty("Parties"), "ResponsibleLab"),
             SeaAreas = ParseSeaAreas(root.GetProperty("Spatial")),
-            Moorings = ParseMoorings(root)
+            Moorings = ParseMoorings(root),
+            Distribution = ParseDistribution(root),
+            DataQuality = ParseDataQuality(root)
         };
 
         return bundle;
@@ -85,7 +87,7 @@ public static class JsonLoader
     }
 
     static List<Mooring> ParseMoorings(JsonElement root)
-    {
+{
         var list = new List<Mooring>();
         if (root.TryGetProperty("Moorings", out var mo) &&
             mo.TryGetProperty("Rows", out var rows) && rows.ValueKind == JsonValueKind.Array)
@@ -108,5 +110,61 @@ public static class JsonLoader
             }
         }
         return list;
+    }
+
+    static Distribution? ParseDistribution(JsonElement root)
+    {
+        if (!root.TryGetProperty("Distribution", out var dEl) || dEl.ValueKind != JsonValueKind.Object)
+            return null;
+        var d = new Distribution();
+        if (dEl.TryGetProperty("Formats", out var formats) && formats.ValueKind == JsonValueKind.Array)
+        {
+            foreach (var f in formats.EnumerateArray())
+            {
+                d.Formats.Add(new Format
+                {
+                    Name = f.GetProperty("Name").GetString() ?? string.Empty,
+                    Version = f.TryGetProperty("Version", out var v) && v.ValueKind == JsonValueKind.String ? v.GetString() : null
+                });
+            }
+        }
+        if (dEl.TryGetProperty("OnlineResources", out var ors) && ors.ValueKind == JsonValueKind.Array)
+        {
+            foreach (var r in ors.EnumerateArray())
+            {
+                d.OnlineResources.Add(new OnlineResource
+                {
+                    Url = r.GetProperty("Url").GetString() ?? string.Empty,
+                    Description = r.TryGetProperty("Description", out var desc) && desc.ValueKind == JsonValueKind.String ? desc.GetString() : null,
+                    Protocol = r.TryGetProperty("Protocol", out var proto) && proto.ValueKind == JsonValueKind.String ? proto.GetString() : null
+                });
+            }
+        }
+        d.UseLimitation = dEl.TryGetProperty("UseLimitation", out var ul) && ul.ValueKind == JsonValueKind.String ? ul.GetString() : null;
+        d.AccessConstraints = dEl.TryGetProperty("AccessConstraints", out var ac) && ac.ValueKind == JsonValueKind.String ? ac.GetString() : null;
+        return d;
+    }
+
+    static DataQuality? ParseDataQuality(JsonElement root)
+    {
+        if (!root.TryGetProperty("DataQuality", out var dqEl) || dqEl.ValueKind != JsonValueKind.Object)
+            return null;
+        var dq = new DataQuality
+        {
+            Lineage = dqEl.TryGetProperty("Lineage", out var lin) && lin.ValueKind == JsonValueKind.String ? lin.GetString() : null
+        };
+        if (dqEl.TryGetProperty("ProcessSteps", out var steps) && steps.ValueKind == JsonValueKind.Array)
+        {
+            foreach (var s in steps.EnumerateArray())
+            {
+                dq.ProcessSteps.Add(new ProcessStep
+                {
+                    Description = s.TryGetProperty("Description", out var desc) && desc.ValueKind == JsonValueKind.String ? desc.GetString() : null,
+                    Date = TryGetDateTime(s, "Date"),
+                    Processor = ParseOrganisation(s, "Processor")
+                });
+            }
+        }
+        return dq;
     }
 }
