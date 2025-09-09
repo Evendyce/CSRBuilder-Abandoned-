@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D23">
+<skos:externalID>SDN:L11:7:D23</skos:externalID>
+<skos:prefLabel>Belfast Ordnance Datum</skos:prefLabel>
+<skos:altLabel>BOD</skos:altLabel>
+<skos:definition>Mean sea level at Clarendon Loch, Belfast averaged between 1951 and 1956 used for the elevation of the zero metres contour on Ordnance Survey of Northern Ireland maps.</skos:definition>
+<dc:date>2012-02-29T13:36:14.382+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D06">
+<skos:externalID>SDN:L11:7:D06</skos:externalID>
+<skos:prefLabel>Bulgarian Navy Hydrographic Service Chart Datum</skos:prefLabel>
+<skos:altLabel>Bulgarian_CD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced by the Bulgarian Navy.</skos:definition>
+<dc:date>2012-02-29T13:36:14.382+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D21">
+<skos:externalID>SDN:L11:7:D21</skos:externalID>
+<skos:prefLabel>Danish Vertical Reference 1990</skos:prefLabel>
+<skos:altLabel>DVR90</skos:altLabel>
+<skos:definition>Danish mean sea level during 1990 introduced in 2001 and adopted as the level of the zero metre contour in Denmark in 2003.</skos:definition>
+<dc:date>2012-02-29T13:36:14.382+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D07">
+<skos:externalID>SDN:L11:7:D07</skos:externalID>
+<skos:prefLabel>French Naval Chart Datum</skos:prefLabel>
+<skos:altLabel>French_CD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced by the French Navy.</skos:definition>
+<dc:date>2012-02-29T13:36:14.383+0000</dc:date><skos:narrowMatch rdf:resource="http://vocab.ndg.nerc.ac.uk/term/L111/7/D30"/> 
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D30">
+<skos:externalID>SDN:L11:7:D30</skos:externalID>
+<skos:prefLabel>French Naval Chart Datum for Lebanon</skos:prefLabel>
+<skos:altLabel>French_CD_Leb</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced by the French Navy for Lebanese coastal waters.</skos:definition>
+<dc:date>2012-02-29T13:36:14.383+0000</dc:date><skos:broadMatch rdf:resource="http://vocab.ndg.nerc.ac.uk/term/L111/7/D07"/> 
+</skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D05">
+<skos:externalID>SDN:L11:7:D05</skos:externalID>
+<skos:prefLabel>Hellenic Navy Hydrographic Service Chart Datum</skos:prefLabel>
+<skos:altLabel>Hellenic_CD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced by the Greek Navy.</skos:definition>
+<dc:date>2012-02-29T13:36:14.383+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D27">
+<skos:externalID>SDN:L11:7:D27</skos:externalID>
+<skos:prefLabel>Helsinki Tide Gauge Datum</skos:prefLabel>
+<skos:altLabel>N60</skos:altLabel>
+<skos:definition>Finnish national benchmark network mean sea level datum.</skos:definition>
+<dc:date>2012-02-29T13:36:14.384+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D02">
+<skos:externalID>SDN:L11:7:D02</skos:externalID>
+<skos:prefLabel>Highest Astronomical Tide</skos:prefLabel>
+<skos:altLabel>HAT</skos:altLabel>
+<skos:definition>The highest level expected to be reached by the sea surface after pertubations due to waves have been filtered out under average meteorological conditions and any combination of astronomical conditions.</skos:definition>
+<dc:date>2012-02-29T13:36:14.384+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D01">
+<skos:externalID>SDN:L11:7:D01</skos:externalID>
+<skos:prefLabel>Lowest Astronomical Tide</skos:prefLabel>
+<skos:altLabel>LAT</skos:altLabel>
+<skos:definition>The lowest level expected to be reached by the sea surface after pertubations due to waves have been filtered out under average meteorological conditions and any combination of astronomical conditions.</skos:definition>
+<dc:date>2012-02-29T13:36:14.384+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D24">
+<skos:externalID>SDN:L11:7:D24</skos:externalID>
+<skos:prefLabel>Malin Ordnance Datum</skos:prefLabel>
+<skos:altLabel>MOD</skos:altLabel>
+<skos:definition>Mean sea level at Portmoor Pier, Malin Head averaged between 1960 and 1969 used for the elevation of the zero metres contour on Ordnance Survey of Ireland maps since 1970.</skos:definition>
+<dc:date>2012-02-29T13:36:14.385+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D19">
+<skos:externalID>SDN:L11:7:D19</skos:externalID>
+<skos:prefLabel>Normaal Amsterdams Peil</skos:prefLabel>
+<skos:altLabel>NAP</skos:altLabel>
+<skos:definition>Elevation marked by a brass benchmark in Amsterdam approximating to mean sea level at the Dutch Coast. Sometimes referred to as Normalnull and used as the zero metre contour in much of Western Europe..</skos:definition>
+<dc:date>2012-02-29T13:36:14.385+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D20">
+<skos:externalID>SDN:L11:7:D20</skos:externalID>
+<skos:prefLabel>Ordnance Datum Newlyn</skos:prefLabel>
+<skos:altLabel>ODN</skos:altLabel>
+<skos:definition>Mean sea level at Newlyn in Cornwall averaged between 1915 and 1921 used for the elevation of the zero metres contour on UK Ordnance Survey maps.</skos:definition>
+<dc:date>2012-02-29T13:36:14.386+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D25">
+<skos:externalID>SDN:L11:7:D25</skos:externalID>
+<skos:prefLabel>Poolbeg Ordnance Datum</skos:prefLabel>
+<skos:altLabel>POD</skos:altLabel>
+<skos:definition>Spring tide low water at Poolbeg Lighthouse, Dublin on 8 April 1837 used for the elevation of the zero metres contour on Ordnance Survey of Ireland maps before 1970.</skos:definition>
+<dc:date>2012-02-29T13:36:14.386+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D14">
+<skos:externalID>SDN:L11:7:D14</skos:externalID>
+<skos:prefLabel>Rijkswaterstaat mean sea level</skos:prefLabel>
+<skos:altLabel>RKW_MSL</skos:altLabel>
+<skos:definition>The mean sea level for a period of minimal 2 days converted to a many-year average based on measurements taken at the specified location.</skos:definition>
+<dc:date>2012-02-29T13:36:14.386+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D28">
+<skos:externalID>SDN:L11:7:D28</skos:externalID>
+<skos:prefLabel>Réseau Géodésique Français 80</skos:prefLabel>
+<skos:altLabel>RGF80</skos:altLabel>
+<skos:definition>The vertical component of a French 3-D CRS computed in 1980 until superseded in 1993 approximating to mean sea level</skos:definition>
+<dc:date>2012-02-29T13:36:14.387+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D29">
+<skos:externalID>SDN:L11:7:D29</skos:externalID>
+<skos:prefLabel>Réseau Géodésique Français 93</skos:prefLabel>
+<skos:altLabel>RGF93</skos:altLabel>
+<skos:definition>The vertical component of a French 3-D CRS computed in 1993 approximating to mean sea level</skos:definition>
+<dc:date>2012-02-29T13:36:14.387+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D31">
+<skos:externalID>SDN:L11:7:D31</skos:externalID>
+<skos:prefLabel>Spanish Chart Datum</skos:prefLabel>
+<skos:altLabel>Spanish_CD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced by the Spanish Hydrographic Office for the Spanish coastal waters.</skos:definition>
+<dc:date>2012-02-29T13:36:14.387+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D26">
+<skos:externalID>SDN:L11:7:D26</skos:externalID>
+<skos:prefLabel>Swedish national coordinate system</skos:prefLabel>
+<skos:altLabel>RH70</skos:altLabel>
+<skos:definition>Swedish national benchmark network mean sea level datum.</skos:definition>
+<dc:date>2012-02-29T13:36:14.388+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D04">
+<skos:externalID>SDN:L11:7:D04</skos:externalID>
+<skos:prefLabel>UK Admiralty Chart Datum</skos:prefLabel>
+<skos:altLabel>ACD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on the navigation charts produced for commercial marine navigation by the UK Hydrographic Office.  It approximates to LAT.</skos:definition>
+<dc:date>2012-02-29T13:36:14.388+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D10">
+<skos:externalID>SDN:L11:7:D10</skos:externalID>
+<skos:prefLabel>ground level</skos:prefLabel>
+<skos:altLabel>ground</skos:altLabel>
+<skos:definition>The level of the land surface at an unspecified location of interest.  Usually associated with meteorological instruments tethered to the ground.</skos:definition>
+<dc:date>2012-02-29T13:36:14.388+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D99">
+<skos:externalID>SDN:L11:7:D99</skos:externalID>
+<skos:prefLabel>inapplicable</skos:prefLabel>
+<skos:altLabel>NA</skos:altLabel>
+<skos:definition>There is no appropriate value. To be used in cases where metadata elements cannot be set null due to schema constraints e.g. when using a 3D CRS specification schema to describe 2D data.</skos:definition>
+<dc:date>2012-02-29T13:36:14.389+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D22">
+<skos:externalID>SDN:L11:7:D22</skos:externalID>
+<skos:prefLabel>local reference plane</skos:prefLabel>
+<skos:altLabel>local</skos:altLabel>
+<skos:definition>A local fixed elevation, usually labelled with a benchmark like a bolt, connected to a national datum through levelling.</skos:definition>
+<dc:date>2012-02-29T13:36:14.389+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D13">
+<skos:externalID>SDN:L11:7:D13</skos:externalID>
+<skos:prefLabel>mean high water</skos:prefLabel>
+<skos:altLabel>MHW</skos:altLabel>
+<skos:definition>The average of the highest elevation reached during at least two tidal cycles, but generally many more.</skos:definition>
+<dc:date>2012-02-29T13:36:14.390+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D18">
+<skos:externalID>SDN:L11:7:D18</skos:externalID>
+<skos:prefLabel>mean high water neaps</skos:prefLabel>
+<skos:altLabel>MHWN</skos:altLabel>
+<skos:definition>The average throughout the year (when the average maximium declination of the moon is 23.5 degrees) of two successive high waters during those periods of 24 hours when the range of the tide is at its least.</skos:definition>
+<dc:date>2012-02-29T13:36:14.390+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D16">
+<skos:externalID>SDN:L11:7:D16</skos:externalID>
+<skos:prefLabel>mean high water springs</skos:prefLabel>
+<skos:altLabel>MHWS</skos:altLabel>
+<skos:definition>The average throughout the year (when the average maximium declination of the moon is 23.5 degrees) of two successive high waters during those periods of 24 hours when the range of the tide is at its greatest.</skos:definition>
+<dc:date>2012-02-29T13:36:14.390+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D12">
+<skos:externalID>SDN:L11:7:D12</skos:externalID>
+<skos:prefLabel>mean low water</skos:prefLabel>
+<skos:altLabel>MLW</skos:altLabel>
+<skos:definition>The average of the lowest elevation reached during at least two tidal cycles, but generally many more.</skos:definition>
+<dc:date>2012-02-29T13:36:14.391+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D17">
+<skos:externalID>SDN:L11:7:D17</skos:externalID>
+<skos:prefLabel>mean low water neaps</skos:prefLabel>
+<skos:altLabel>MLWN</skos:altLabel>
+<skos:definition>The average throughout the year (when the average maximium declination of the moon is 23.5 degrees) of two successive low waters during those periods of 24 hours when the range of the tide is at its least.</skos:definition>
+<dc:date>2012-02-29T13:36:14.391+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D15">
+<skos:externalID>SDN:L11:7:D15</skos:externalID>
+<skos:prefLabel>mean low water springs</skos:prefLabel>
+<skos:altLabel>MLWS</skos:altLabel>
+<skos:definition>The average throughout the year (when the average maximium declination of the moon is 23.5 degrees) of two successive low waters during those periods of 24 hours when the range of the tide is at its greatest.</skos:definition>
+<dc:date>2012-02-29T13:36:14.391+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D11">
+<skos:externalID>SDN:L11:7:D11</skos:externalID>
+<skos:prefLabel>mean sea level</skos:prefLabel>
+<skos:altLabel>MSL</skos:altLabel>
+<skos:definition>The average elevation of the sea surface over an unspecified time period of at least a tidal cycle, but generally much longer.</skos:definition>
+<dc:date>2012-02-29T13:36:14.392+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D09">
+<skos:externalID>SDN:L11:7:D09</skos:externalID>
+<skos:prefLabel>sea floor</skos:prefLabel>
+<skos:altLabel>sea_floor</skos:altLabel>
+<skos:definition>The level of the sea floor at the location of interest.  Usually associated with vertical position co-ordinates of oceanographic instruments tethered to the sea floor.</skos:definition>
+<dc:date>2012-02-29T13:36:14.392+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D08">
+<skos:externalID>SDN:L11:7:D08</skos:externalID>
+<skos:prefLabel>sea level</skos:prefLabel>
+<skos:altLabel>sea_level</skos:altLabel>
+<skos:definition>The level of the sea surface at an unspecified time and location of interest.  Usually associated with water depth measurements by shipboard echo sounder.  May be anywhere between LAT and HAT.</skos:definition>
+<dc:date>2012-02-29T13:36:14.392+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/UKN">
+<skos:externalID>SDN:L11:7:UKN</skos:externalID>
+<skos:prefLabel>unknown</skos:prefLabel>
+<skos:altLabel>unknown</skos:altLabel>
+<skos:definition>The correct value is not known to, and not computable by, the creator of this information. However, a correct value probably exists.</skos:definition>
+<dc:date>2012-02-29T13:36:14.393+0000</dc:date></skos:Concept>
+<skos:Concept rdf:about="http://vocab.ndg.nerc.ac.uk/term/L11/7/D03">
+<skos:externalID>SDN:L11:7:D03</skos:externalID>
+<skos:prefLabel>unspecified chart datum</skos:prefLabel>
+<skos:altLabel>CD</skos:altLabel>
+<skos:definition>The elevation of the zero metres contour on an unspecified marine navigation chart. These are generally based on LAT which represents the safest option for navigation.</skos:definition>
+<dc:date>2012-02-29T13:36:14.393+0000</dc:date></skos:Concept>
+</rdf:RDF>
